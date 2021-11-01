@@ -1,0 +1,85 @@
+/*  цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* акцент #2196F3 */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+.logo {
+  color: var(--accent-color);
+}
+.logo-header {
+  color: var(--title-text-color);
+}
+.logo-footer {
+  color: var(--primary-white-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.site-nav a {
+  color: var(--title-text-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.contacts a {
+  color: var(--primary-text-color);
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--accent-color);
+}
+
+/* Hero*/
+.hero-title {
+  color: var(--primary-white-color);
+}
+
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/*Section*/
+
+.section-title {
+  color: var(--title-text-color);
+}
+.feature-list .title {
+  color: var(--title-text-color);
+}
+.team-name {
+  color: var(--title-text-color);
+}
+
+.section-team {
+  background-color: #f5f4fa;
+}
+
+/* Footer */
+
+.page-footer {
+  background-color: #2f303a;
+}
+.address .address-fact {
+  color: var(--primary-white-color);
+}
+.address a {
+  color: rgba(255, 255, 255, 0.6);
+}
