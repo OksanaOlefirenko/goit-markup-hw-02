@@ -1,85 +1,207 @@
-/*  цвет основного текста #212121 */
-/* вторичный цвет текста #757575 */
-/* акцент #2196F3 */
 :root {
   --primary-text-color: #757575;
+  --main-title-color: #ffffff;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --header-text-color: #212121;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.14;
 }
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/*-----------------------------Header-----------------*/
 
 .logo {
   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
+
 .logo-header {
-  color: var(--title-text-color);
-}
-.logo-footer {
-  color: var(--primary-white-color);
+  color: var(--header-text-color);
 }
 
-ul {
-  list-style: none;
+.header-link {
+  color: var(--header-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
-.site-nav a {
-  color: var(--title-text-color);
-}
-.site-nav a:hover,
-.site-nav a:focus {
-  color: var(--accent-color);
-}
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-
-.contacts a {
+.contacts .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
-.contacts a:hover,
-.contacts a:focus {
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+.header-list .link.current {
   color: var(--accent-color);
 }
 
-/* Hero*/
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/*-------------------------- Hero--------------------------*/
+
+.hero {
+  background-color: #2f303a;
+}
 .hero-title {
   color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.button {
+.hero-button {
+  font-family: inherit;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
-/*Section*/
+/*--------------------------Section------------------------*/
 
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.36;
+  text-align: center;
 }
+
 .feature-list .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
-.team-name {
-  color: var(--title-text-color);
+
+.feature-list .feature-text {
+  line-height: 1.71;
 }
 
 .section-team {
   background-color: #f5f4fa;
 }
 
-/* Footer */
+.team-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19px;
+  text-align: center;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/*-------------------------- Footer------------------- */
 
 .page-footer {
   background-color: #2f303a;
 }
-.address .address-fact {
+
+.logo-footer {
   color: var(--primary-white-color);
 }
-.address a {
-  color: rgba(255, 255, 255, 0.6);
+
+.address-link {
+  color: var(--primary-white-color);
+}
+.contacts-link {
+  color: var(--footer-text-color);
+}
+
+.footer-list .link {
+  line-height: 1.71px;
+  font-style: normal;
+}
+
+.footer-list .link:hover,
+.footer-list .link:focus {
+  color: var(--accent-color);
+}
+
+/*---------------------Portfolio----------------*/
+
+.examples-button {
+  font-family: inherit;
+  color: var(--header-text-color);
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+.examples-button:hover,
+.examples-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.examples-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
 }
